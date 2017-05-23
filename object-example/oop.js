@@ -30,7 +30,6 @@ Person.prototype.getFullname = function(){
 
 // Class Person knows how to greet
 Person.prototype.greet = function() {
-	console.log(this);
     sout('Hi, my name is ' + this.getFullname());
 }
 

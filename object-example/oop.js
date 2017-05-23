@@ -1,9 +1,8 @@
 //inherit function
-// args Object, Object
+// args Object
 // return void
 Object.prototype.extends = function(ParentObject){
 	this.prototype = Object.create(ParentObject.prototype); // overwrite Developer prototype with Person's prototype
-	// this.prototype.__super__ = ParentObject; //in case we need parent originals
 	this.prototype.constructor = this; // link Developer constructor back to original Developer
 }
 
